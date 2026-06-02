@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NoQs Scan & Order – Skip the queue, savour the moment. Browse our menu and order seamlessly from your table." />
+  <title>NoQs – Scan & Order</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       SITE HEADER
+  ══════════════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+
+      <div class="brand">
+        <span class="brand-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="10" fill="#FFD700"/>
+            <path d="M9 12h4v4H9zM9 20h4v4H9zM17 12h4v4h-4zM23 12h4v4h-4zM17 20h10v4H17z" fill="#47128C"/>
+            <path d="M23 20h4v-4h-4v4z" fill="#47128C" opacity="0.6"/>
+          </svg>
+        </span>
+        <div class="brand-text">
+          <span class="brand-name">NoQs</span>
+          <span class="brand-tag">Scan &amp; Order</span>
+        </div>
+      </div>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <ul role="list">
+          <li><a href="#menu" class="nav-link active" aria-current="page">Menu</a></li>
+          <li><a href="#offers" class="nav-link">Offers</a></li>
+          <li><a href="#track" class="nav-link">Track Order</a></li>
+          <li><a href="#help" class="nav-link">Help</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="btn-icon" aria-label="Search menu items">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+        <button class="btn-cart" aria-label="View cart – 3 items" data-count="3">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="cart-badge" aria-hidden="true">3</span>
+        </button>
+        <button class="btn-hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile nav drawer -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+      <ul role="list">
+        <li><a href="#menu" class="nav-link active">Menu</a></li>
+        <li><a href="#offers" class="nav-link">Offers</a></li>
+        <li><a href="#track" class="nav-link">Track Order</a></li>
+        <li><a href="#help" class="nav-link">Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════════════════════════════
+       TABLE INFO BANNER
+  ══════════════════════════════════════════════ -->
+  <div class="table-banner" role="status" aria-live="polite">
+    <div class="table-banner-inner">
+      <span class="table-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        Table 07
+      </span>
+      <span class="table-info">The Spice Garden &nbsp;·&nbsp; Puri Road, Bhubaneswar</span>
+      <span class="table-status">
+        <span class="status-dot" aria-hidden="true"></span>
+        Kitchen Open
+      </span>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════
+       HERO BANNER
+  ══════════════════════════════════════════════ -->
+  <section class="hero" aria-label="Today's featured offer">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Today's Special</p>
+      <h1 class="hero-title">Biryani &amp; Beyond</h1>
+      <p class="hero-sub">Slow-cooked dum biryani, freshly baked rotis &amp; artisan desserts — all at your table in minutes.</p>
+      <a href="#menu" class="btn-primary">Explore the Menu</a>
+    </div>
+    <figure class="hero-visual" aria-hidden="true">
+      <div class="hero-plate">
+        <div class="plate-ring ring-1"></div>
+        <div class="plate-ring ring-2"></div>
+        <div class="plate-center">
+          <span>🍛</span>
+        </div>
+      </div>
+      <div class="floating-tag tag-1">Veg ✓</div>
+      <div class="floating-tag tag-2">Chef's Pick ⭐</div>
+      <div class="floating-tag tag-3">₹249</div>
+    </figure>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       MAIN CONTENT
+  ══════════════════════════════════════════════ -->
+  <main id="main-content" class="main-content">
+
+    <!-- ── Category Filter Bar ─────────────────── -->
+    <section class="filter-bar" aria-label="Menu categories">
+      <div class="filter-inner">
+        <p class="sr-only">Filter by category:</p>
+        <div class="filter-scroll" role="list">
+          <button class="filter-chip active" role="listitem" aria-pressed="true">All Items</button>
+          <button class="filter-chip" role="listitem" aria-pressed="false">🍛 Biryani</button>
+          <button class="filter-chip" role="listitem" aria-pressed="false">🥗 Starters</button>
+          <button class="filter-chip" role="listitem" aria-pressed="false">🍞 Breads</button>
+          <button class="filter-chip" role="listitem" aria-pressed="false">🍖 Mains</button>
+          <button class="filter-chip" role="listitem" aria-pressed="false">🥤 Drinks</button>
+          <button class="filter-chip" role="listitem" aria-pressed="false">🍮 Desserts</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Offer Strip ─────────────────────────── -->
+    <section class="offer-strip" id="offers" aria-label="Current offers">
+      <div class="offer-strip-inner">
+        <article class="offer-card offer-card--gold">
+          <p class="offer-label">🔥 Limited Time</p>
+          <h2 class="offer-title">Meal for 2 @ ₹499</h2>
+          <p class="offer-desc">Biryani + Starter + 2 Drinks</p>
+          <button class="btn-offer" aria-label="Add Meal for 2 deal to cart">Grab Deal</button>
+        </article>
+        <article class="offer-card offer-card--purple">
+          <p class="offer-label">🆕 Just Added</p>
+          <h2 class="offer-title">Paneer Festival</h2>
+          <p class="offer-desc">6 exclusive paneer dishes, weekends only</p>
+          <button class="btn-offer" aria-label="View Paneer Festival menu">Explore →</button>
+        </article>
+        <article class="offer-card offer-card--dark">
+          <p class="offer-label">📱 Scan & Save</p>
+          <h2 class="offer-title">10% Off on App</h2>
+          <p class="offer-desc">Use code NOQS10 at checkout</p>
+          <button class="btn-offer" aria-label="Copy promo code NOQS10">Copy Code</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── Product Grid ────────────────────────── -->
+    <section class="catalog" id="menu" aria-label="Menu catalog">
+      <div class="catalog-header">
+        <h2 class="catalog-title">Full Menu</h2>
+        <div class="catalog-controls">
+          <label for="sort-select" class="sr-only">Sort items by</label>
+          <select id="sort-select" class="sort-select" aria-label="Sort menu items">
+            <option>Popular First</option>
+            <option>Price: Low → High</option>
+            <option>Price: High → Low</option>
+            <option>Veg Only</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product-grid" role="list" aria-label="Menu items">
+
+        <!-- Card 1 -->
+        <article class="product-card" role="listitem">
+          <div class="card-image-wrap">
+            <figure class="card-image" aria-label="Hyderabadi Dum Biryani">
+              <span class="food-emoji" aria-hidden="true">🍛</span>
+            </figure>
+            <div class="card-badges">
+              <span class="badge badge--veg" aria-label="Vegetarian">🟢 Veg</span>
+              <span class="badge badge--hot" aria-label="Bestseller">🔥 Best</span>
+            </div>
+            <button class="btn-wishlist" aria-label="Add Hyderabadi Dum Biryani to wishlist">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <header class="card-header">
+              <h3 class="card-name">Hyderabadi Dum Biryani</h3>
+              <p class="card-desc">Slow-cooked basmati with whole spices, caramelised onions &amp; saffron.</p>
+            </header>
+            <div class="card-meta">
+              <span class="card-prep" aria-label="Preparation time: 20 minutes">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                20 min
+              </span>
+              <span class="card-rating" aria-label="Rating: 4.8 out of 5">★ 4.8</span>
+            </div>
+            <footer class="card-footer">
+              <div class="card-price">
+                <span class="price-current" aria-label="Price: ₹299">₹299</span>
+                <span class="price-old" aria-label="Original price: ₹349">₹349</span>
+              </div>
+              <button class="btn-add" aria-label="Add Hyderabadi Dum Biryani to cart">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Add
+              </button>
+            </footer>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="product-card" role="listitem">
+          <div class="card-image-wrap">
+            <figure class="card-image" aria-label="Paneer Tikka Masala">
+              <span class="food-emoji" aria-hidden="true">🍲</span>
+            </figure>
+            <div class="card-badges">
+              <span class="badge badge--veg" aria-label="Vegetarian">🟢 Veg</span>
+            </div>
+            <button class="btn-wishlist" aria-label="Add Paneer Tikka Masala to wishlist">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <header class="card-header">
+              <h3 class="card-name">Paneer Tikka Masala</h3>
+              <p class="card-desc">Chargrilled cottage cheese in a rich tomato-cream gravy with fenugreek.</p>
+            </header>
+            <div class="card-meta">
+              <span class="card-prep" aria-label="Preparation time: 15 minutes">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                15 min
+              </span>
+              <span class="card-rating" aria-label="Rating: 4.6 out of 5">★ 4.6</span>
+            </div>
+            <footer class="card-footer">
+              <div class="card-price">
+                <span class="price-current" aria-label="Price: ₹249">₹249</span>
+              </div>
+              <button class="btn-add" aria-label="Add Paneer Tikka Masala to cart">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Add
+              </button>
+            </footer>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="product-card product-card--featured" role="listitem" aria-label="Featured item">
+          <div class="card-image-wrap">
+            <figure class="card-image" aria-label="Seekh Kebab Platter">
+              <span class="food-emoji" aria-hidden="true">🍢</span>
+            </figure>
+            <div class="card-badges">
+              <span class="badge badge--nonveg" aria-label="Non-vegetarian">🔴 Non-Veg</span>
+              <span class="badge badge--chef" aria-label="Chef's pick">👨‍🍳 Chef's Pick</span>
+            </div>
+            <button class="btn-wishlist" aria-label="Add Seekh Kebab Platter to wishlist">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <header class="card-header">
+              <h3 class="card-name">Seekh Kebab Platter</h3>
+              <p class="card-desc">Minced lamb skewers with green chutney, pickled onions &amp; tandoori roti.</p>
+            </header>
+            <div class="card-meta">
+              <span class="card-prep" aria-label="Preparation time: 25 minutes">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                25 min
+              </span>
+              <span class="card-rating" aria-label="Rating: 4.9 out of 5">★ 4.9</span>
+            </div>
+            <footer class="card-footer">
+              <div class="card-price">
+                <span class="price-current" aria-label="Price: ₹379">₹379</span>
+                <span class="price-old" aria-label="Original price: ₹420">₹420</span>
+              </div>
+              <button class="btn-add" aria-label="Add Seekh Kebab Platter to cart">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Add
+              </button>
+            </footer>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="product-card" role="listitem">
+          <div class="card-image-wrap">
+            <figure class="card-image" aria-label="Garlic Butter Naan">
+              <span class="food-emoji" aria-hidden="true">🫓</span>
+            </figure>
+            <div class="card-badges">
+              <span class="badge badge--veg" aria-label="Vegetarian">🟢 Veg</span>
+            </div>
+            <button class="btn-wishlist" aria-label="Add Garlic Butter Naan to wishlist">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <header class="card-header">
+              <h3 class="card-name">Garlic Butter Naan</h3>
+              <p class="card-desc">Fluffy tandoor-baked naan lathered with garlic-herb compound butter.</p>
+            </header>
+            <div class="card-meta">
+              <span class="card-prep" aria-label="Preparation time: 8 minutes">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                8 min
+              </span>
+              <span class="card-rating" aria-label="Rating: 4.5 out of 5">★ 4.5</span>
+            </div>
+            <footer class="card-footer">
+              <div class="card-price">
+                <span class="price-current" aria-label="Price: ₹89">₹89</span>
+              </div>
+              <button class="btn-add" aria-label="Add Garlic Butter Naan to cart">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Add
+              </button>
+            </footer>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="product-card" role="listitem">
+          <div class="card-image-wrap">
+            <figure class="card-image" aria-label="Mango Lassi">
+              <span class="food-emoji" aria-hidden="true">🥭</span>
+            </figure>
+            <div class="card-badges">
+              <span class="badge badge--veg" aria-label="Vegetarian">🟢 Veg</span>
+            </div>
+            <button class="btn-wishlist" aria-label="Add Mango Lassi to wishlist">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <header class="card-header">
+              <h3 class="card-name">Mango Lassi</h3>
+              <p class="card-desc">Chilled Alphonso mango blended with thick curd, cardamom &amp; rose water.</p>
+            </header>
+            <div class="card-meta">
+              <span class="card-prep" aria-label="Preparation time: 5 minutes">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                5 min
+              </span>
+              <span class="card-rating" aria-label="Rating: 4.7 out of 5">★ 4.7</span>
+            </div>
+            <footer class="card-footer">
+              <div class="card-price">
+                <span class="price-current" aria-label="Price: ₹129">₹129</span>
+              </div>
+              <button class="btn-add" aria-label="Add Mango Lassi to cart">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Add
+              </button>
+            </footer>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="product-card" role="listitem">
+          <div class="card-image-wrap">
+            <figure class="card-image" aria-label="Gulab Jamun">
+              <span class="food-emoji" aria-hidden="true">🍮</span>
+            </figure>
+            <div class="card-badges">
+              <span class="badge badge--veg" aria-label="Vegetarian">🟢 Veg</span>
+              <span class="badge badge--hot" aria-label="Popular">❤️ Loved</span>
+            </div>
+            <button class="btn-wishlist" aria-label="Add Gulab Jamun to wishlist">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <header class="card-header">
+              <h3 class="card-name">Gulab Jamun</h3>
+              <p class="card-desc">Khoya dumplings soaked overnight in saffron-infused rose sugar syrup.</p>
+            </header>
+            <div class="card-meta">
+              <span class="card-prep" aria-label="Preparation time: 5 minutes">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                5 min
+              </span>
+              <span class="card-rating" aria-label="Rating: 4.8 out of 5">★ 4.8</span>
+            </div>
+            <footer class="card-footer">
+              <div class="card-price">
+                <span class="price-current" aria-label="Price: ₹99">₹99</span>
+                <span class="price-old" aria-label="Original price: ₹120">₹120</span>
+              </div>
+              <button class="btn-add" aria-label="Add Gulab Jamun to cart">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Add
+              </button>
+            </footer>
+          </div>
+        </article>
+
+        <!-- Card 7 -->
+        <article class="product-card" role="listitem">
+          <div class="card-image-wrap">
+            <figure class="card-image" aria-label="Chicken Tikka">
+              <span class="food-emoji" aria-hidden="true">🍗</span>
+            </figure>
+            <div class="card-badges">
+              <span class="badge badge--nonveg" aria-label="Non-vegetarian">🔴 Non-Veg</span>
+            </div>
+            <button class="btn-wishlist" aria-label="Add Chicken Tikka to wishlist">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <header class="card-header">
+              <h3 class="card-name">Chicken Tikka</h3>
+              <p class="card-desc">Yoghurt-marinated chicken cubes grilled in the tandoor with achari spices.</p>
+            </header>
+            <div class="card-meta">
+              <span class="card-prep" aria-label="Preparation time: 18 minutes">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                18 min
+              </span>
+              <span class="card-rating" aria-label="Rating: 4.7 out of 5">★ 4.7</span>
+            </div>
+            <footer class="card-footer">
+              <div class="card-price">
+                <span class="price-current" aria-label="Price: ₹319">₹319</span>
+              </div>
+              <button class="btn-add" aria-label="Add Chicken Tikka to cart">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Add
+              </button>
+            </footer>
+          </div>
+        </article>
+
+        <!-- Card 8 -->
+        <article class="product-card" role="listitem">
+          <div class="card-image-wrap">
+            <figure class="card-image" aria-label="Dal Makhani">
+              <span class="food-emoji" aria-hidden="true">🫕</span>
+            </figure>
+            <div class="card-badges">
+              <span class="badge badge--veg" aria-label="Vegetarian">🟢 Veg</span>
+            </div>
+            <button class="btn-wishlist" aria-label="Add Dal Makhani to wishlist">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </button>
+          </div>
+          <div class="card-body">
+            <header class="card-header">
+              <h3 class="card-name">Dal Makhani</h3>
+              <p class="card-desc">Black lentils slow-simmered overnight with cream, tomato &amp; butter.</p>
+            </header>
+            <div class="card-meta">
+              <span class="card-prep" aria-label="Preparation time: 12 minutes">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                12 min
+              </span>
+              <span class="card-rating" aria-label="Rating: 4.6 out of 5">★ 4.6</span>
+            </div>
+            <footer class="card-footer">
+              <div class="card-price">
+                <span class="price-current" aria-label="Price: ₹199">₹199</span>
+              </div>
+              <button class="btn-add" aria-label="Add Dal Makhani to cart">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Add
+              </button>
+            </footer>
+          </div>
+        </article>
+
+      </div><!-- /.product-grid -->
+
+      <div class="load-more-wrap">
+        <button class="btn-load-more" aria-label="Load more menu items">Load More Items</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════
+       ORDER TRACK SECTION (Bonus Feature)
+  ══════════════════════════════════════════════ -->
+  <section class="order-track" id="track" aria-label="Track your order">
+    <div class="order-track-inner">
+      <h2 class="section-title">Your Order</h2>
+      <div class="track-steps" role="list" aria-label="Order progress">
+        <div class="track-step track-step--done" role="listitem">
+          <div class="step-dot" aria-hidden="true">✓</div>
+          <p class="step-label">Order Placed</p>
+        </div>
+        <div class="track-line track-line--done" aria-hidden="true"></div>
+        <div class="track-step track-step--done" role="listitem">
+          <div class="step-dot" aria-hidden="true">✓</div>
+          <p class="step-label">Confirmed</p>
+        </div>
+        <div class="track-line track-line--active" aria-hidden="true"></div>
+        <div class="track-step track-step--active" role="listitem">
+          <div class="step-dot" aria-hidden="true">
+            <span class="pulse-ring" aria-hidden="true"></span>
+          </div>
+          <p class="step-label">Preparing</p>
+        </div>
+        <div class="track-line" aria-hidden="true"></div>
+        <div class="track-step" role="listitem">
+          <div class="step-dot" aria-hidden="true"></div>
+          <p class="step-label">Served</p>
+        </div>
+      </div>
+      <p class="track-eta" aria-live="polite">Estimated time: <strong>~12 minutes</strong></p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       SITE FOOTER
+  ══════════════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-name">NoQs</span>
+        <p class="footer-tagline">Skip the queue. Savour the moment.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul role="list">
+          <li><a href="#help">Help &amp; Support</a></li>
+          <li><a href="#privacy">Privacy Policy</a></li>
+          <li><a href="#terms">Terms of Service</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <p class="footer-copy">© 2025 NoQs Technologies. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       STICKY CART BAR (Bonus Feature)
+  ══════════════════════════════════════════════ -->
+  <div class="sticky-cart" role="complementary" aria-label="Cart summary">
+    <div class="sticky-cart-inner">
+      <div class="sticky-cart-info">
+        <span class="sticky-cart-count">3 items</span>
+        <span class="sticky-cart-total">₹477</span>
+      </div>
+      <button class="btn-view-cart" aria-label="View full cart and proceed to checkout">
+        View Cart &amp; Checkout
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Skip to main content link (accessibility) -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
